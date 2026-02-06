@@ -1,5 +1,5 @@
-This program uses a pre-trained YOLOv8 model to perform object detection on an image.
-The model identifies objects in the image and displays bounding boxes with labels and confidence scores.
+This program captures live video from a webcam and applies real-time image processing using OpenCV.
+It displays the original image, grayscale image, and detected edges using the Canny algorithm.
 
-i have used a dog picture in the code which is attached.
+well i have used very basic and beginner functions like cv2.imshow or cv2.imread just to play and apply the concepts myself
 
