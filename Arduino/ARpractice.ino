@@ -8,13 +8,14 @@ void setup() {
 void loop() {
  int buttonState = digitalRead(buttonPin);
 
-if (buttonState == LOW) {   // button pressed
+if (buttonState == LOW) {   
     digitalWrite(7, HIGH);
     delay(500);
     digitalWrite(7, LOW);
     delay(500);
   } else {
-    digitalWrite(7, LOW); // button not pressed
+    digitalWrite(7, LOW); 
   }
 }
+
 
