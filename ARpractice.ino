@@ -1,12 +1,20 @@
+const int buttonPin = 2;
+
 void setup() {
-  // put your setup code here, to run once:
-pinMode(7,OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(buttonPin, INPUT_PULLUP);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-digitalWrite(7,HIGH);
-delay(1000);
-digitalWrite(7,LOW);
-delay(1000);
+ int buttonState = digitalRead(buttonPin);
+
+if (buttonState == LOW) {   // button pressed
+    digitalWrite(7, HIGH);
+    delay(500);
+    digitalWrite(7, LOW);
+    delay(500);
+  } else {
+    digitalWrite(7, LOW); // button not pressed
+  }
 }
+
